@@ -1,0 +1,90 @@
+/* estilizacao geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+}
+
+:root{
+    --roxo-principal--: #5E17EB;
+}
+
+body{
+    background-color: #ebebeb;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.interface #img-logo{
+    width: 100px;
+}
+
+header{
+    background-color: white;
+    padding: 0 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .input-nav{
+    padding: 2px 5px;
+    border-radius: 6px;
+    border: solid 1px  ;
+    border-color: #828282;
+}
+
+header .input-nav i{
+    color: var(--roxo-principal--) ;
+}
+
+
+header input{
+    color: black;
+    background: none;
+    outline: none;
+    border-style: none;
+    height: 30px;
+    width: 300px;
+}
+
+header input::placeholder{
+    color: #828282;
+}
+
+header a{
+    display: inline-block;
+    font-size: 15px;
+    color: #828282;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+header a:hover{
+    color: #5E17EB;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+
+
+
+
+
