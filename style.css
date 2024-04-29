@@ -22,8 +22,10 @@ body{
 }
 
 .interface #img-logo{
-    width: 100px;
+    width: 120px;
 }
+
+/* Cabecalho */
 
 header{
     background-color: white;
@@ -38,9 +40,14 @@ header > .interface{
 
 header .input-nav{
     padding: 2px 5px;
-    border-radius: 6px;
-    border: solid 1px  ;
+    border-radius: 7px;
+    border: solid 1px;
     border-color: #828282;
+    transition: 0.2s;
+}
+
+header .input-nav:hover{
+    border-color: var(--roxo-principal--);
 }
 
 header .input-nav i{
@@ -81,6 +88,32 @@ header nav ul{
 header nav ul li{
     display: inline-block;
     padding: 0 20px;
+}
+
+.sub-menu{
+    border:  1px solid #f0f0f0;
+    background-color: white;
+}
+
+.sub-menu nav ul{
+    margin: 0 450px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub-menu nav ul a{
+    padding: 10px;
+    display: inline-block;
+    font-size: 15px;
+    color: #828282;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.sub-menu nav ul a:hover{
+    color: var(--roxo-principal--);
+    transform: scale(1.05);
 }
 
 
