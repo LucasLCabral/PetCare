@@ -138,6 +138,7 @@ section.produtos h2{
     justify-content: center;
     flex-direction: column;
     display: flex;
+    margin: 20px;
     
 }
 
@@ -185,7 +186,117 @@ section.produtos h2{
     color: white;
 }
 
+/* Plano de Saude */
+section.plano-de-saude{
+    background-color: #5E17EB;
+    padding: 20px;
+}
 
+
+section.plano-de-saude h2{
+    text-align: center;
+    color: white;
+    margin: 20px;
+}
+
+section.plano-de-saude .flex{
+    display: flex;
+    justify-content: space-evenly;
+    gap: -30
+}
+
+.card-plano-saude-menor{
+    cursor: grab;
+    margin-top: 30px;
+    width: 270px;
+    height: 350px;
+    background-color: white;
+    color: var(--roxo-principal--);
+    text-align: center;
+    border-radius: 20px;
+    transition: 0.2s
+}
+
+.card-plano-saude-menor h3{
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.card-plano-saude-menor .preco-plano-saude{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card-plano-saude-menor .regiao-plano-saude{
+    font-size: 15px;
+}
+
+.card-plano-saude-menor:hover{
+    transform: scale(1.05);
+}
+
+.btn-plano-saude{
+    margin-top: 30px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    border: none;
+    color: white;
+    background-color: #5E17EB;
+}
+
+
+.card-plano-saude-maior{
+    cursor: grab;
+    width: 300px;
+    height: 380px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    color: var(--roxo-principal--);
+    transition: 0.2s;
+}
+
+
+.card-plano-saude-maior h3{
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.card-plano-saude-maior .preco-plano-saude{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card-plano-saude-maior:hover{
+    transform: scale(1.05);
+}
+
+#logo-plano-de-saude{
+    width: 100px;
+}
+
+.btn-plano-saude{
+    margin-top: 30px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    border: 2px solid;
+    color: white;
+    background-color: #5E17EB;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-plano-saude:hover{
+    border-color: #5E17EB;
+    background-color: white;
+    color: var(--roxo-principal--);
+    transform: scale(1.05);
+}
 
 
 
