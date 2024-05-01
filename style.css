@@ -117,7 +117,7 @@ header nav ul li{
     margin: 0 450px;
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .sub-menu nav ul a{
@@ -127,6 +127,7 @@ header nav ul li{
     color: #828282;
     text-decoration: none;
     transition: 0.2s;
+    
 }
 
 .sub-menu nav ul a:hover{
@@ -212,7 +213,6 @@ section.plano-de-saude h2{
 section.plano-de-saude .flex{
     display: flex;
     justify-content: space-evenly;
-    gap: -30
 }
 
 .card-plano-saude-menor{
@@ -331,11 +331,6 @@ section.plano-de-saude .flex{
 }
 
 /* Amiguinhos */
-section.amiguinhos{
-    display: block;
-}
-
-
 
 section.amiguinhos h2{
     margin: 10px 20px 0 0;
@@ -345,7 +340,7 @@ section.amiguinhos h2{
 
 .card-amiguinhos{
     background-color: var(--roxo-principal--);
-    border-radius: 20px;
+    border-radius: 15px;
     margin: 10px 150px;
     display: flex;
 }
@@ -353,7 +348,7 @@ section.amiguinhos h2{
 .card-amiguinhos img{
     width: 300px;
     width: 350px;
-    border-radius: 20px;
+    border-radius: 15px;
     align-self: flex-start;
 }
 
@@ -367,7 +362,6 @@ section.amiguinhos h2{
 }
 
 .card-amiguinhos h3{
-    justify-content: space-evenly;
     color: white;
 }
 
@@ -379,6 +373,80 @@ section.amiguinhos button{
     padding: 5px 20px;
     margin: 10px 40%;
 }
+
+/* Sobre Nos */
+
+section.sobre-nos{
+    background-color: var(--roxo-principal--);  
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.card-sobre {
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px 150px;
+    display: flex;
+}
+
+.card-sobre img {
+    width: 350px;
+    height: 400px;
+    border-radius: 15px;
+    align-self: flex-end;
+}
+
+.card-content-sobre {
+    padding: 20px;
+}
+
+.card-content-sobre p {
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.card-sobre h3{
+    color: var(--roxo-principal--);
+}
+
+.card-sobre p{
+    display: flex;
+    color: var(--roxo-escuro--);
+}
+
+section.amiguinhos button{
+    padding: 5px 20px;
+    margin: 10px 40%;
+}
+
+#logo-sobre{
+    width: 200px;
+    margin-top: -20px;
+    margin-bottom: -50px;
+}
+
+.btn-sobre{
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    border: 2px solid;
+    color: var(--roxo-principal--);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-sobre:hover{
+    border-color: white;
+    background-color: white;
+    color: var(--roxo-principal--);
+    transform: scale(1.05);
+}
+
+
 
 
 
