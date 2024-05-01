@@ -13,7 +13,7 @@
 }
 
 body{
-    background-color: #ECECEC;
+    background-color: #f1f1f1;
     height: 100vh;
 }
 
@@ -95,6 +95,19 @@ header nav ul li{
     padding: 0 20px;
 }
 
+.menu-desktop i{
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 25px;
+    color: var(--roxo-principal--);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.menu-desktop i:hover{
+    transform: scale(1.05);
+}
+
 .sub-menu{
     border:  1px solid #f0f0f0;
     background-color: white;
@@ -123,7 +136,7 @@ header nav ul li{
 
 /* Produtos */
 section.produtos h2{
-    margin: 20px;
+    margin-top: 20px;
     color: var(--roxo-principal--);
     text-align: center;
 }
@@ -139,11 +152,7 @@ section.produtos h2{
     flex-direction: column;
     display: flex;
     margin: 20px;
-    
-}
-
-.flex{
-    gap: 20px;
+    cursor: pointer;
 }
 
 .card-produto img{
@@ -179,6 +188,7 @@ section.produtos h2{
     margin: 20px; 
     transition: 0.3s;
     padding: 10px;
+    cursor: pointer;
 }
 
 .card-produto button.btn-produto:hover{
@@ -232,6 +242,17 @@ section.plano-de-saude .flex{
     font-size: 15px;
 }
 
+.card-plano-saude-menor a{
+    margin-top: 30px;
+    display: block;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card-plano-saude-menor a:hover{
+    transform: scale(1.05);
+}
+
 .card-plano-saude-menor:hover{
     transform: scale(1.05);
 }
@@ -271,6 +292,17 @@ section.plano-de-saude .flex{
     font-weight: 400;
 }
 
+.card-plano-saude-maior a{
+    margin-top: 30px;
+    display: block;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card-plano-saude-maior a:hover{
+    transform: scale(1.05);
+}
+
 .card-plano-saude-maior:hover{
     transform: scale(1.05);
 }
@@ -280,7 +312,7 @@ section.plano-de-saude .flex{
 }
 
 .btn-plano-saude{
-    margin-top: 30px;
+    margin-top: 10px;
     padding: 10px 30px;
     border-radius: 30px;
     font-size: 20px;
