@@ -500,3 +500,30 @@ section.amiguinhos button{
     border-color: var(--roxo-principal--);
     transform: scale(1.05);
 }
+
+/* FOOTER */
+footer{
+    background-color: white;
+}
+
+footer .interface{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    align-items: center;
+    text-align: center;
+}
+
+#direitos{
+    position: relative;
+    color: var(--roxo-principal--);
+    margin-top: 7%;
+    margin-left: 2%;
+}
+
+#redes-sociais i{
+    font-size: 35px;
+    color: var(--roxo-principal--);
+    margin: 0 5px;
+    cursor: pointer;
+}
