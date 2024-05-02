@@ -10,10 +10,11 @@
 :root{
     --roxo-principal--: #5E17EB;
     --roxo-escuro--: #2A007C;
+    --fundo--: #f1f1f1;
 }
 
 body{
-    background-color: #f1f1f1;
+    background-color: var(--fundo--);
     height: 100vh;
 }
 
@@ -446,9 +447,56 @@ section.amiguinhos button{
     transform: scale(1.05);
 }
 
+/* contato */
+#contato h2{
+    background-color: var(--fundo--);
+    margin: 20px 0;
+    text-align: center;
+    color: var(--roxo-principal--);
+}
 
+#contato-usuario{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
 
+}
 
+.dados-usuario{
+    width: 400px;
+    height: 60px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #dfdfdf;
+}
 
+#contato .interface{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
+#btn-enviar-dados{
+    color: white;
+    margin: 20px 0;
+    width: 300px;
+    height: 35px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--roxo-principal--);
+    transition: 0.2s;
+    cursor: pointer;
+}
 
+#btn-enviar-dados:hover{
+    background-color: white;
+    color: var(--roxo-principal--);
+    border: 2px solid;
+    border-color: var(--roxo-principal--);
+    transform: scale(1.05);
+}
