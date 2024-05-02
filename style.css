@@ -141,8 +141,9 @@ header nav ul li{
 .slideshow-container{
     width: 100%;
     overflow: hidden;
+    text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     position: center;
 }
 
@@ -150,8 +151,14 @@ header nav ul li{
     display: none;
     width: 100%;
     height: 100%;
-    margin: 10px 3.5%;
     object-fit: cover; /* Garante que a imagem preencha o contêiner, mantendo a proporção */
+}
+
+.tamanho-imagem{
+    margin: 10px;
+    width: 1000px;
+    border-radius: 10px;
+    height: auto;
 }
 
 

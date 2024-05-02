@@ -11,5 +11,5 @@ slides[i].style.display = "none";
 slideIndex++;
 if (slideIndex > slides.length) {slideIndex = 1}
 slides[slideIndex-1].style.display = "block";
-setTimeout(showSlides, 20000); // Altere o valor para ajustar a velocidade do slideshow (em milissegundos)
+setTimeout(showSlides, 10000); // Altere o valor para ajustar a velocidade do slideshow (em milissegundos)
 }
