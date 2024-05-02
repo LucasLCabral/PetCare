@@ -63,6 +63,18 @@
         </nav>
     </div> <!-- sub menu -->
 
+    <div class="slideshow-container">       <!--Slide show-->
+        <div class="slide fade">
+            <img src="./img/banners/1.png" alt="Image 1">
+        </div>
+        <div class="slide fade">
+            <img src="./img/banners/2.png" alt="Image 2">
+        </div>
+        <div class="slide fade">
+            <img src="./img/banners/3.png" alt="Image 3">
+        </div>
+    </div>
+
     <section class="produtos">
         <div class="interface">
             <h2 class="titulo">Nossos Produtos</h2>
@@ -72,14 +84,14 @@
                     <img src="./img/produtos/produto1.jpg">
 
                     <div class="titulo-produto">
-                        <p>Ração Hills para Cães Filhotes de Mini e Pequeno Porte...</p>
+                        <p>Ração Hills para Cães Filhotes de Mini e Pequ...</p>
                     </div>
                     <div class="preco-produto">
                         <h5>R$159,90</h5>
                         <h3>R$104,90</h3>
                     </div> 
 
-                    <div class="btn-produto"> <a href="#"><button class="btn-produto">Adicionar à sacola</button></a> </div>
+                    <div class="btn-produto"> <a href=""><button class="btn-produto">Adicionar à sacola</button></a> </div>
                 </div> <!--prod 1 -->
 
                 <div class="card-produto">
@@ -93,42 +105,42 @@
                         <h3>R$174,90</h3>
                     </div>
 
-                    <div class="btn-produto"> <a href="#"><button class="btn-produto">Adicionar à sacola</button></a> </div>
+                    <div class="btn-produto"> <a href=""><button class="btn-produto">Adicionar à sacola</button></a> </div>
                 </div> <!--prod 2 -->
 
                 <div class="card-produto">
                     <img src="./img/produtos/produto3.jpg">
 
                     <div class="titulo-produto">
-                        <p>Ração GranPlus Gourmet para Cães Adultos de Médi...</p>
+                        <p>Ração GranPlus Gourmet para Cães Adultos de...</p>
                     </div>
                     <div class="preco-produto">
                         <h5>R$99,00</h5>
                         <h3>R$64,90</h3>
                     </div>
 
-                    <div class="btn-produto"> <a href="#"><button class="btn-produto">Adicionar à sacola</button></a> </div>
+                    <div class="btn-produto"> <a href=""><button class="btn-produto">Adicionar à sacola</button></a> </div>
                 </div> <!--prod 3 -->
 
                 <div class="card-produto">
                     <img src="./img/produtos/produto4.jpg">
 
                     <div class="titulo-produto">
-                        <p>Ração GranPlus Menu para Cães Adultos de Porte Mini...</p>
+                        <p>Ração GranPlus Menu para Cães Adultos de...</p>
                     </div>
                     <div class="preco-produto">
                         <h5>R$179,90</h5>
                         <h3>R$166,90</h3>
                     </div>
 
-                    <div class="btn-produto"> <a href="#"><button class="btn-produto">Adicionar à sacola</button></a> </div>
+                    <div class="btn-produto"> <a href=""><button class="btn-produto">Adicionar à sacola</button></a> </div>
                 </div> <!--prod 4 -->
 
                 <div class="card-produto">
                     <img src="./img/produtos/produto5.jpg">
 
                     <div class="titulo-produto">
-                        <p>Antipulgas Simparic 20 mg para cães 5,1 a 10 kg - Zoetis</p>
+                        <p>Antipulgas Simparic 20 mg para cães 5,1...</p>
                     </div>
                     <div class="preco-produto">
                         <h5>R$289,90</h5>
@@ -213,17 +225,19 @@
 
     <section id="contato">
         <div class="interface">
-            <h2 class="titulo">Fale com a gente!</h2>
+            <h2 class="titulo-contato">Fale com a gente!</h2>
 
-            <div id="contato-usuario">
-                <input type="text" class="dados-usuario" placeholder="Digite seu email">
-                <input type="text" class="dados-usuario" placeholder="Digite seu número de telefone">
-                <input type="text" class="dados-usuario" placeholder="O que você precisa?">
-            </div>
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu email:" required> <!-- required serve para fazer o campo ser obrigatorio -->
+                    <input type="text" name="" id="" placeholder="Seu celular:"> <!-- place holder serve para mostrar o texto inicial-->
+                    <textarea name="" id="" placeholder="Sua mensagem:" required></textarea>
+                    <div class="btn-enviar">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
             
-            <button id="btn-enviar-dados">Enviar</button>
-        </div>
-    </section>
+        </div> <!-- interface -->
+    </section> <!-- contato -->
 
     <footer>
         <div class="interface">
