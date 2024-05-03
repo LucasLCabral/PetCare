@@ -13,3 +13,20 @@ if (slideIndex > slides.length) {slideIndex = 1}
 slides[slideIndex-1].style.display = "block";
 setTimeout(showSlides, 10000); // Altere o valor para ajustar a velocidade do slideshow (em milissegundos)
 }
+
+/* Menu Hamburguer */
+let btnMenu = document.getElementById('btn-menu'); // Verifique se o ID está correto
+let menu = document.getElementById('menu-mobile');
+let overlay = document.getElementById('overlay-menu');
+
+btnMenu.addEventListener('click', () => {
+    menu.classList.add('abrir-menu');
+});
+
+menu.addEventListener('click', () => {
+    menu.classList.remove('abrir-menu');
+});
+
+overlay.addEventListener('click', () => {
+    menu.classList.remove('abrir-menu');
+});
