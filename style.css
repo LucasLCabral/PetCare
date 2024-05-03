@@ -459,6 +459,7 @@ section.amiguinhos h2{
     border-radius: 15px;
     margin: 10px 150px;
     display: flex;
+    text-align: center;
 }
 
 .card-amiguinhos img{
@@ -485,10 +486,6 @@ section.amiguinhos h2{
     color: white;
 }
 
-section.amiguinhos button{
-    padding: 5px 20px;
-    margin: 10px 40%;
-}
 
 /* Sobre Nos */
 
@@ -649,6 +646,8 @@ footer .interface{
 }
 
 @media screen and (max-width: 1200px){
+
+     /* menu hamburguer */
     .flex{
         flex-direction: column;
     }
@@ -681,6 +680,7 @@ footer .interface{
         border: solid 1px;
         border-color: #828282;
         transition: 0.2s;
+        margin-bottom: 20px;
     }
     
     header .input-nav-mobile:hover{
@@ -709,7 +709,101 @@ footer .interface{
         width: 350px;
     }
 
+    /* Produtos */
+
+    section.produtos h2{
+        font-size: 20px;
+    }
+
+    .produtos .interface .flex{
+        display: grid;
+        grid-template-columns: repeat(2, 0.2fr);
+        grid-auto-rows: 400px;
+        text-align: center;
+    }
+
+    .card-produto{
+        width: 200px;
+    }
+
+    .card-produto button{
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    .prod5{
+        display: none;
+    }
+
+    /* plano de saude */
+
+    .plano-de-saude .interface .flex {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Alterado para uma coluna */
+        gap: 20px; /* Adicionado espaçamento entre os cards */
+    }
+
+    .card-plano-saude-menor{
+        width: calc(100% - 80px);
+        margin: 0 auto;
+    }
+
+    .card-plano-saude-maior {
+        width: calc(100% - 40px); /* Ajusta a largura dos cards */
+        margin: 0 auto; /* Centraliza os cards */
+    }
+
+    #logo-plano-de-saude {
+        width: 80px; /* Reduz o tamanho do logo */
+    }
+
+    /* amiguinhos */
     
+    .card-amiguinhos {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px;
+    }
+    
+    .card-amiguinhos img {
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .card-content {
+        text-align: justify;
+    }
+    
+    .amiguinhos .btn-roxo {
+        text-align: center;
+        margin-top: 20px;
+        margin: 10px;
+        margin-left: 35%;
+    }
 
+    /* sobre nós */
 
+    .card-amiguinhos {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px;
+    }
+    
+    .card-amiguinhos img {
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .card-content {
+        text-align: justify;
+    }
+    
+    .card-sobre .btn-roxo {
+        text-align: center;
+        margin-top: 20px;
+        margin: 10px;
+        margin-left: 35%;
+    }
 }
