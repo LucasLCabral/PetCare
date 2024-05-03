@@ -138,18 +138,18 @@ header nav ul li{
 
 /* ESTILO MENU MOBILE */
 .btn-abrir-menu i{
-    color: var(--rosa-principal--);
+    color: var(--roxo-principal--);
     font-size: 40px;
+    text-align: left;
 }
 
 
-
 .menu-mobile{
-    background-color: #1B1B1B;
+    background-color: #ffffff;
     height: 100vh;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 99999;
     width: 0%;
     overflow: hidden;
@@ -165,12 +165,13 @@ header nav ul li{
 }
 
 .menu-mobile nav ul li{
-    text-align: right;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu-mobile nav ul li a{
     text-decoration: none;
-    color: white;
+    color: var(--roxo-principal--);
     font-size: 20px;
     font-weight: 300;
     padding: 20px 4%;
@@ -647,7 +648,7 @@ footer .interface{
 
 @media screen and (max-width: 1200px){
 
-     /* menu hamburguer */
+     /* estilização geral */
     .flex{
         flex-direction: column;
     }
@@ -704,6 +705,21 @@ footer .interface{
         color: #828282;
     }
 
+    /* menu hamburguer */
+
+    .nav-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-abrir-menu {
+        display: block;
+    }
+
+    .input-nav{
+        display: none;
+    }
+
     /* Slide Show */
     .tamanho-imagem{
         width: 350px;
@@ -728,6 +744,7 @@ footer .interface{
 
     .card-produto button{
         margin-top: 10px;
+        padding: 20px 10px;
         display: inline-block;
     }
 
@@ -763,6 +780,7 @@ footer .interface{
         flex-direction: column;
         align-items: center;
         margin: 0 10px;
+        padding: 20px 4%;
     }
     
     .card-amiguinhos img {
@@ -784,19 +802,20 @@ footer .interface{
 
     /* sobre nós */
 
-    .card-amiguinhos {
+    .card-sobre {
         flex-direction: column;
         align-items: center;
         margin: 0 10px;
+        padding: 20px 4%;
     }
     
-    .card-amiguinhos img {
+    .card-sobre img {
         width: 100%;
         border-radius: 15px;
         margin-bottom: 20px;
     }
     
-    .card-content {
+    .card-content-sobre {
         text-align: justify;
     }
     
@@ -806,4 +825,12 @@ footer .interface{
         margin: 10px;
         margin-left: 35%;
     }
+
+    /* contato */
+
+    section#contato{
+        margin: 20px 4%;
+    }
+
+    /* footer */
 }
