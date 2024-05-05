@@ -660,7 +660,15 @@ footer .interface{
     /* header */
     header > .interface{
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    header .logo-desktop{
+        display: none;
+    }
+
+    header .logo-mobile{
+        margin-left: -2%;
     }
 
     .interface #img-logo{
@@ -690,6 +698,11 @@ footer .interface{
     
     header .input-nav-mobile i{
         color: var(--roxo-principal--) ;
+    }
+
+    header i{
+        color: var(--roxo-principal--);
+        font-size: 20px;
     }
     
     header input{
@@ -739,12 +752,13 @@ footer .interface{
     }
 
     .card-produto{
-        width: 200px;
+        margin-left: 25%;
+        width: 160px;
     }
 
     .card-produto button{
         margin-top: 10px;
-        padding: 20px 10px;
+        padding: 10px 60px;
         display: inline-block;
     }
 
@@ -833,4 +847,23 @@ footer .interface{
     }
 
     /* footer */
+
+    footer{
+        background-color: white;
+    }
+    
+    footer .interface{
+        width: 100%;
+    }
+    
+    #direitos{
+        font-size: 10px;
+    }
+    
+    #redes-sociais i{
+        font-size: 25px;
+        color: var(--roxo-principal--);
+        margin: 0 5px;
+        cursor: pointer;
+    }
 }
