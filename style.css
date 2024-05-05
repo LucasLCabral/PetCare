@@ -469,6 +469,11 @@ section.plano-de-saude .flex{
 }
 
 /* Amiguinhos */
+section.amiguinhos{
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
 
 section.amiguinhos h2{
     margin: 10px 20px 0 0;
@@ -507,6 +512,7 @@ section.amiguinhos h2{
 .card-amiguinhos p{
     color: white;
 }
+
 
 
 /* Sobre Nos */
@@ -551,10 +557,6 @@ section.sobre-nos{
     color: var(--roxo-escuro--);
 }
 
-section.amiguinhos button{
-    padding: 5px 20px;
-    margin: 10px 40%;
-}
 
 #logo-sobre{
     width: 200px;
@@ -667,7 +669,7 @@ footer .interface{
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1200px){
 
      /* estilização geral */
     .flex{
@@ -761,7 +763,7 @@ footer .interface{
 
     /* Slide Show */
     .tamanho-imagem{
-        width: 350px;
+        width: 60%;
     }
 
     /* Produtos */
@@ -774,9 +776,13 @@ footer .interface{
         flex-wrap: wrap;
     }
 
-
     .card-produto{
         width: 90%;
+    }
+
+    .card-produto img{
+        width: 50%;
+        height: auto;
     }
 
     .card-produto button{
@@ -827,13 +833,6 @@ footer .interface{
     
     .card-content {
         text-align: justify;
-    }
-    
-    .amiguinhos .btn-roxo {
-        text-align: center;
-        margin-top: 20px;
-        margin: 10px;
-        margin-left: 35%;
     }
 
     /* sobre nós */
