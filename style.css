@@ -291,11 +291,17 @@ section.produtos h2{
     flex-direction: column;
     margin: 20px;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.card-produto:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #c9c8cc;
 }
 
 .card-produto img{
     align-items: center;
-    width: 100%;
+    width: 75%;
     height: 60%;
 }
 
@@ -393,6 +399,7 @@ section.plano-de-saude .flex{
 
 .card-plano-saude-menor:hover{
     transform: scale(1.05);
+    box-shadow: 0 0 8px var(--roxo-escuro--);
 }
 
 .btn-plano-saude{
