@@ -136,7 +136,17 @@ header nav ul li{
     transform: scale(1.05);
 }
 
+
+
 /* ESTILO MENU MOBILE */
+header .logo-mobile{
+    display: none;
+}
+
+header .sacola-mobile{
+    display: none;
+}
+
 .btn-abrir-menu i{
     color: var(--roxo-principal--);
     font-size: 40px;
@@ -254,28 +264,39 @@ opacity: 1;
 }
 
 /* Produtos */
+section.produtos{
+    text-align: center;
+}
+
 section.produtos h2{
     color: var(--roxo-principal--);
     text-align: center;
+}
+
+.produtos .flex{
+    display: flex;
+    justify-content: space-around;
+    
 }
 
 
 .card-produto{
     background-color: white;
     width: 250px;
-    height: 350px;
+    height: auto;
     border-radius: 10%;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     margin: 20px;
     cursor: pointer;
 }
 
 .card-produto img{
     align-items: center;
-    width: 120px;
+    width: 100%;
+    height: 60%;
 }
 
 .card-produto p{
@@ -646,7 +667,7 @@ footer .interface{
     cursor: pointer;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 768px){
 
      /* estilização geral */
     .flex{
@@ -668,7 +689,12 @@ footer .interface{
     }
 
     header .logo-mobile{
+        display: flex;
         margin-left: -2%;
+    }
+
+    header .sacola-mobile{
+        display: flex;
     }
 
     .interface #img-logo{
@@ -744,16 +770,13 @@ footer .interface{
         font-size: 20px;
     }
 
-    .produtos .interface .flex{
-        display: grid;
-        grid-template-columns: repeat(2, 0.2fr);
-        grid-auto-rows: 400px;
-        text-align: center;
+    .produtos .flex{
+        flex-wrap: wrap;
     }
 
+
     .card-produto{
-        margin-left: 25%;
-        width: 160px;
+        width: 90%;
     }
 
     .card-produto button{
@@ -762,9 +785,7 @@ footer .interface{
         display: inline-block;
     }
 
-    .prod5{
-        display: none;
-    }
+    
 
     /* plano de saude */
 
@@ -799,6 +820,7 @@ footer .interface{
     
     .card-amiguinhos img {
         width: 100%;
+        height: auto;
         border-radius: 15px;
         margin-bottom: 20px;
     }
@@ -825,6 +847,7 @@ footer .interface{
     
     .card-sobre img {
         width: 100%;
+        height: auto;
         border-radius: 15px;
         margin-bottom: 20px;
     }
