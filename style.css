@@ -497,8 +497,8 @@ section.amiguinhos h2{
 }
 
 .card-amiguinhos img{
-    width: 300px;
     width: 350px;
+    height: 400px;
     border-radius: 15px;
     align-self: flex-start;
 }
