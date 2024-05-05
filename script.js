@@ -15,7 +15,7 @@ setTimeout(showSlides, 10000); // Altere o valor para ajustar a velocidade do sl
 }
 
 /* Menu Hamburguer */
-let btnMenu = document.getElementById('btn-menu'); // Verifique se o ID está correto
+let btnMenu = document.getElementById('btn-menu');
 let menu = document.getElementById('menu-mobile');
 let overlay = document.getElementById('overlay-menu');
 
